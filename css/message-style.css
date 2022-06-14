@@ -1,0 +1,30 @@
+
+/**
+ * Messages
+ */
+
+ #messages div {
+    max-width: 40em;
+    margin: 0 auto; 
+    padding: 1em;
+    text-align: center;
+    border-radius: 2em;
+  }
+   #messages .error {
+    color: var(--error-fg-color);
+    background-color: var(--error-bg-color);
+  }
+  
+  #messages .success {
+    color: var(--success-fg-color);
+    background-color: var(--success-bg-color);
+  }
+
+  
+
+  html{
+  --success-bg-color: #DFF2BF;
+  --success-fg-color: #4F8A10;
+
+  --error-bg-color: #FFD2D2;
+  --error-fg-color: #D8000C;}

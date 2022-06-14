@@ -1,0 +1,11 @@
+<?php 
+  include_once('../templates/list_feed.php');
+  include_once('../templates/common.php');
+  include_once('../utils/session.php');
+  include_once('../db/proposals.php');
+  include_once('../templates/messages.php');
+  draw_loggedin_profile();
+  display_messages(); 
+  draw_feed();
+  draw_footer();
+?>

@@ -1,0 +1,107 @@
+body {
+  background-image: url(../img/background1.png);
+  background-repeat: repeat;
+  font-family: Montserrat;
+  margin: 0;
+}
+
+.profile {
+  top: 20%;
+  margin: 5em auto;
+  width: 75%;
+  opacity: 1;
+  border-radius: 2%;
+  background-color: rgb(169, 238, 216);
+  box-shadow: 1px 2px gainsboro;
+  clear: both;
+}
+
+
+.edit{
+  font-size: calc(20px + (70 - 20) * ((100vw - 400px) / (1600 - 400)));
+  margin: 0.5em 0.5em;
+  padding: 0.7em 0.2em;
+  color: rgb(23, 54, 46);
+  width: 65%;
+}
+
+label > p {
+  font-size: calc(10px + (20 - 10) * ((100vw - 400px) / (1600 - 400)));
+}
+
+.form__container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 65%;
+  clear: both;
+  margin-left: 5%;
+}
+
+.option{
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.option > label {
+  width: 60px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, .bio{
+  background-color:rgba(255, 255, 255, 0.63);
+  border: 1px solid rgb(0, 0, 0);
+  width: 75%;
+  height: 45px;
+  border-radius: 4px;
+  margin: 0.5em;
+}
+
+label {
+  padding: 1%;
+}
+
+.form__container input {
+  width: 75%;
+  clear: both;
+}
+
+
+.submit-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.submit{
+  width: 22%;
+  font-size: 1.2em;
+  padding: 5px;
+  border-radius: 4px;
+  margin: 42px;
+  min-width: 155px;
+  max-width: 185px;
+
+  /* Button Customization*/
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center; 
+  color:rgb(88, 88, 88);
+  opacity: 1;
+  line-height: 20px;
+}
+
+.submit:hover{
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  border: 1px solid;
+  margin: 41px;
+}

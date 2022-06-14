@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  font-family: Montserrat;
+  box-sizing: border-box;
+  background-color: rgb(228, 234, 238);
+  background-image: url("../img/background1.png");
+}
+
+/*Blocks for each post*/
+.post {
+  display: flex;
+  margin: 0;
+  margin-left: 15%;
+}
+
+.fullpost{
+  display: flex;
+  margin: 20px;
+  margin-left: 15%;
+}
+
+.info {
+  width: 70%;
+  margin: 0;
+  opacity: 1;
+  background-color: rgb(169, 238, 216);
+  box-shadow: 1px 2px gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.flex__container {
+  display: flex;
+}
+
+.description__container {
+  width: 65%;
+}
+
+.posttype {
+  display: inline;
+  margin: 0;
+  max-width: 30%;
+  float: left;
+}
+
+.author {
+  margin: 0 auto;
+  display: inline;
+  max-width: 30%;
+  text-align: right;
+  float: right;
+}
+
+.description,
+.type,
+.size,
+.color {
+  margin: 16px 0;
+}
+
+.petpic {
+  margin-bottom: 3%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20%;
+  display: inline-block;
+}
+
+.interactions {
+  margin-top: 5%;
+  margin-left: 1%;
+  text-align: center;
+  display: inline-block;
+}
+
+.fullinteractions{
+  margin-top: 5%;
+  margin-left: 1%;
+  width: 10%;
+  text-align: center;
+  display: inline-block;
+}
+
+.more,
+.comment,
+.like {
+  position: relative;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  width: 50%;
+  height: 10%;
+  margin-top: 10%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 4px;
+}
+
+.more:hover, .comment:hover, .like:hover, .addpost:hover{
+  cursor: pointer;
+}
+
+.get__more, .get__more:hover, .get__more:focus, .get__more:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.label {
+  margin: 0 auto;
+}
+
+.start__container{
+  display:flex;
+  margin:20px auto;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.addpost{
+  position: relative;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  width: 10%;
+  /* height: ; */
+  margin: 2px 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 4px;
+}
+
+.feed{
+  margin:0;
+  width: 20%;
+  display: flex;
+}
+
+ /* styling search bar */ 
+ .search input[type=text]{ 
+  width:300px; 
+  height:100%;
+  border-radius:25px; 
+  border: none; 
+  background-color:#cbecf9;
+} 
+
+input:focus{ 
+  width:300px; 
+  height:100%;
+  border-radius:25px; 
+  border: none; 
+  background-color:#cbecf9;
+  outline: none;
+} 
+    
+.search{ 
+  float:right; 
+  margin:7px;
+  margin-bottom: 0;
+} 
+  
+.search button{ 
+  background-color: transparent; 
+  color: #4d6491; 
+  float: right; 
+  padding: 5px 10px; 
+  margin-right: 16px; 
+  font-size: 12px; 
+  border: none; 
+  cursor: pointer; 
+}  
+
+.start{
+  color:black;
+  width: 80%;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.makeProposal,.makeQuestion {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.adoptProposal:hover{
+  text-decoration: underline;
+  cursor:pointer;
+}

@@ -1,0 +1,9 @@
+<?php 
+  include_once('../templates/add_adoption_post.php');
+  include_once('../templates/common.php');
+ include_once('../templates/messages.php');
+ draw_loggedin_profile();
+ display_messages();
+  draw_adoption_post();
+  draw_footer();
+?>
